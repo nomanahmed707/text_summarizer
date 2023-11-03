@@ -5,6 +5,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s')
 
 project_name = "text_summarizer"
+
 list_of_files = [
     ".github/workflows/.gitkeep",
     f"src/{project_name}/__init__.py",
@@ -19,13 +20,15 @@ list_of_files = [
     f"src/{project_name}/constants/__init__.py",
     "config/config.yaml",
     "params.yaml",
-    "app.py",
+    "app.py",clear
     "main.py",
     "Dockerfile",
     "requirements.txt",
     "setup.py",
     "research/trials.ipynb",
 ]
+
+
 
 for filepath in list_of_files:
     filepath = Path(filepath)
